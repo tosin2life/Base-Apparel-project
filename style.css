@@ -45,8 +45,8 @@ body {
 .col-right {
   background-image: url(./images/hero-mobile.jpg);
   width: 100%;
-  height: 300px;
-  background-position: top center;
+  height: 400px;
+  /* background-position: top center; */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -102,37 +102,41 @@ body {
   border-radius: 5rem;
   border: none;
   background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-/* box shadow: */
+  /* box shadow: */
 }
 
-.container form button:hover{
-background-image: linear-gradient(135deg,  hsl(0, 80%, 86%),  hsla(0, 52%, 80%, 0.781));
+.container form button:hover {
+  background-image: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%),
+    hsla(0, 52%, 80%, 0.781)
+  );
 }
 .container form input::placeholder {
   color: var(--DesaturatedRed);
   opacity: 0.8;
 }
 
-.container form .error-icon{
-    display: none;
-    position: absolute;
-    top: 12px;
-    right: 100px;
+.container form .error-icon {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 100px;
 }
-.container form .error-text{
-    display: none;
-    position: absolute;
-    top:6rem;
-    left: 1rem;
+.container form .error-text {
+  display: none;
+  position: absolute;
+  top: 6rem;
+  left: 1rem;
 }
-.container form.error .error-icon{
-    display: inline-block;
+.container form.error .error-icon {
+  display: inline-block;
 }
-.container form.error .error-text{
-    display: block;
+.container form.error .error-text {
+  display: block;
 }
-.container form.error input{
-    border: 2px solid var(--SoftRed);
+.container form.error input {
+  border: 2px solid var(--SoftRed);
 }
 @media only screen and (min-width: 1020px) {
   .header img {
@@ -144,7 +148,6 @@ background-image: linear-gradient(135deg,  hsl(0, 80%, 86%),  hsla(0, 52%, 80%, 
     flex-direction: row;
     padding: 0;
     margin: 0;
-   
   }
   .col-left {
     width: 100%;
@@ -159,9 +162,10 @@ background-image: linear-gradient(135deg,  hsl(0, 80%, 86%),  hsla(0, 52%, 80%, 
     background-size: cover;
   }
   .col-right {
-    background-image: url(./images/hero-desktop.jpg);
     height: 100vh;
-    width: 100vw;
+    background-image: url(./images/hero-desktop.jpg);
+    background-position: top center;
+    background-size: cover;
   }
   .col-left h1 {
     font-size: 5rem;
@@ -171,15 +175,15 @@ background-image: linear-gradient(135deg,  hsl(0, 80%, 86%),  hsla(0, 52%, 80%, 
     padding: 0;
     font-size: 1.4rem;
     padding-right: 8rem;
-  
+
     /* line-height: 2.2rem; */
-     }
+  }
 
   .container form {
     margin: 0;
     margin-top: 4rem;
   }
-  .container form button{
-      width: 80px;
+  .container form button {
+    width: 80px;
   }
 }
